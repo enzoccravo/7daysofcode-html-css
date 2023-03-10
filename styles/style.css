@@ -1,9 +1,10 @@
 :root {
     --fonte: 'Inter', sans-serif;
     --vermelho: #8E2424;
-    --vermelho-opacity: rgba(142, 36, 36, 0.03);
+    --vermelho-opacity: rgba(195, 25, 25, 0.03);
     --cinza: #667085;
     --cinza-claro: #EAECF0;
+    --bg-color: #F9FAFB;
     --azul: #101828;
 }
 
@@ -38,12 +39,17 @@ body {
 }
 
 .navbar__ul {
-    color: var(--cinza);
     display: flex;
     gap: 32px;
     list-style: none;
     font-weight: 500;
     margin: 0 119px;
+}
+
+.navbar__ul-item {
+    text-decoration: none;
+    color: var(--cinza);
+    font-weight: 500;
 }
 
 .navbar__perfil {
@@ -241,6 +247,47 @@ body {
     color: var(--cinza);
     font-size: 14px;
     font-weight: 400;
+}
+
+.formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 6rem 0;
+    gap: 2rem;
+}
+
+.formularios__titulo {
+    color: var(--azul);
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.formularios__subtitulo {
+    color: var(--cinza);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.formularios__email {
+    padding: 12px 18px;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 8px;
+    margin: 0px 1rem;
+    width: 360px;
+}
+
+.formularios__btn {
+    color: white;
+    border-radius: 8px;
+    padding: 10px 18px;
+    background-color: var(--vermelho);
+    text-decoration: none;
+}
+
+.formularios__copyright {
+    color: #98A2B3;
 }
 
 
