@@ -1,6 +1,7 @@
 :root {
     --fonte: 'Inter', sans-serif;
     --vermelho: #8E2424;
+    --vermelho-opacity: rgba(142, 36, 36, 0.03);
     --cinza: #667085;
     --cinza-claro: #EAECF0;
     --azul: #101828;
@@ -137,9 +138,9 @@ body {
     color: var(--vermelho);
     font-weight: 500;
     font-size: 14px;
-    border: 1px solid rgba(142, 36, 36, 0.03);
+    border: 1px solid var(--vermelho-opacity);
     border-radius: 16px;
-    background-color: rgba(142, 36, 36, 0.03);
+    background-color: var(--vermelho-opacity);
     padding: 4px 12px;
 }
 
@@ -148,12 +149,14 @@ body {
     font-size: 36px;
     font-weight: 600;
     margin: 0;
+    padding: 1rem 0;
 }
 
 .vagas__up-texto {
     color: var(--cinza);
     font-size: 20px;
     font-weight: 400;
+    padding-bottom: 4rem;
 }
 
 .vagas__preco {
@@ -200,6 +203,46 @@ body {
     font-weight: 500;
     margin: 0;
 }
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--vermelho-opacity);
+    margin: 0px 6rem 6rem 6rem;
+    padding: 4rem;
+}
+
+.depoimentos__subtitulo {
+    color: var(--vermelho);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.depoimentos__titulo {
+    color: var(--azul);
+    font-weight: 500;
+    font-size: 36px;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.depoimentos__imagem {
+    padding: 1rem 0;
+}
+
+.depoimentos__nome {
+    color: var(--azul);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.depoimentos__nome-info {
+    color: var(--cinza);
+    font-size: 14px;
+    font-weight: 400;
+}
+
 
 
 
